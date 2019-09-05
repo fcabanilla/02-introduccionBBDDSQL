@@ -1,13 +1,11 @@
-CREATE DATABASE test;
+DROP TABLE IF EXISTS test.02_auto_increment
 
-USE test;
-
-CREATE TABLE prueba_02(
+CREATE TABLE test.02_auto_increment(
 	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     nombre VARCHAR(60) NOT NULL,
     PRIMARY KEY(id)
 );
 
-INSERT INTO prueba_02 (nombre) VALUES('Federico');
-INSERT INTO prueba_02 (nombre) VALUES('Flavia');
-INSERT INTO prueba_02 (nombre) VALUES('Florencia');
+INSERT INTO test.02_auto_increment (nombre) VALUES('Federico');
+INSERT INTO test.02_auto_increment (nombre) VALUES('Flavia');
+INSERT INTO test.02_auto_increment (nombre) VALUES('Florencia');
